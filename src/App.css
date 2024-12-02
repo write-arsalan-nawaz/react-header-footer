@@ -1,0 +1,100 @@
+/* General App Styles */
+html, body {
+  margin: 0;
+  height: 100%; /* Ensures the body and HTML take up the full viewport height */
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Makes the app fill the viewport height */
+}
+
+main {
+  flex: 1; /* Ensures the main content takes up available space and pushes the footer down */
+  padding: 20px;
+  min-height: 60vh; /* Provides adequate space before footer when there's little content */
+  text-align: center;
+}
+
+header, .sub-header, footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Header Styles */
+header {
+  background-color: #4a90e2;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header button {
+  background-color: white;
+  color: #4a90e2;
+  border: none;
+  margin: 0 10px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+header button:hover {
+  background-color: #e8f1fd;
+  transform: translateY(-2px);
+}
+
+header button:active {
+  transform: translateY(0);
+}
+
+/* Sub-Header Styles */
+.sub-header {
+  background-color: #e8f1fd;
+  color: #333;
+  padding: 8px 0;
+  border-bottom: 2px solid #4a90e2;
+}
+
+.sub-header button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  margin: 0 5px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sub-header button:hover {
+  background-color: #357abd;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+footer a {
+  color: #61dafb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
